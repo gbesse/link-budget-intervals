@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "link-budget-intervals"
+version = "0.1.0a1"
+description = "FR: Expliquer les marges radio avec hypothèses incertaines | EN: Explain radio margins under uncertain assumptions | ES: Explicar márgenes de radio con hipótesis inciertas"
+requires-python = ">=3.11"
+license = "MIT"
+
+[project.scripts]
+link-budget-intervals = "link_budget_intervals.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["link_budget_intervals*"]
